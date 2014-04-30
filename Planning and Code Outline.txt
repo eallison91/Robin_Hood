@@ -1,0 +1,18 @@
+Basic structure:
+- 1 game controller (more or less omnipotent)
+- 1 game "stage" (current view)
+- collections of objects ("children" in Flash?) to update and render
+
+
+Game graphics classes:
+- projectiles (incl. rocks, missiles, nukes, etc)
+- arrows (incl. plain, explosive, multiple, etc)
+- buildings (incl. hospital, factory, etc)
+- bow
+
+
+Gameplay display classes:
+- score
+- powerup buttons (?)
+- timer (?)
+- prompts/instructions
