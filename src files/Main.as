@@ -21,7 +21,8 @@ package
 		private function init(e:Event = null):void 
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
-			// entry point
+			var game:RobinHood = new RobinHood();
+			addChild(game);
 		}
 
 	}
