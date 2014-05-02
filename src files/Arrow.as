@@ -5,6 +5,7 @@ package
 	/**
 	 * ...
 	 * @author Eleanor Allison
+	 * @author Jake Sanders
 	 */
 	public class Arrow extends FlxSprite implements Projectile 
 	{

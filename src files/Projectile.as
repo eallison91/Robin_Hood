@@ -4,6 +4,7 @@ package
 	/**
 	 * ...
 	 * @author Eleanor Allison
+	 * @author Jake Sanders
 	 */
 	public interface Projectile 
 	{

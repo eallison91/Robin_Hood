@@ -6,6 +6,7 @@ package
 	/**
 	 * ...
 	 * @author Eleanor Allison
+	 * @author Jake Sanders
 	 */
 	[Frame(factoryClass="Preloader")]
 	public class Main extends Sprite 
