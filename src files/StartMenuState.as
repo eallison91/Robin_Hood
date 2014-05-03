@@ -7,7 +7,6 @@ package
 	 * @author Eleanor Allison
 	 * @author Jake Sanders
 	 */
-	public class StartMenuState extends FlxState 
 	{
 		
 		public function StartMenuState() 
