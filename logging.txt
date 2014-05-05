@@ -1,0 +1,9 @@
+game name: robin_hood
+game id: 105
+skey: ff3fe2e3edf7537b45cf898378a17816
+valid version ids: 1-3
+valid category ids: any number (usually starts at 1)
+
+db host: dev.db.centerforgamescience.com
+db username: robin_db_user
+db password: bc69ee9213
