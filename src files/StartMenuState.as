@@ -1,23 +1,18 @@
 package  
 {
-	import org.flixel.FlxState;
+	import org.flixel.*;
 	
 	/**
 	 * ...
 	 * @author Eleanor Allison
 	 * @author Jake Sanders
 	 */
+		
+	public class StartMenuState extends FlxState
 	{
-		
-		public function StartMenuState() 
+		override public function create():void
 		{
-			
+			add(new FlxText(0,0,100,"Hello, World!")); //adds a 100px wide text field at position 0,0 (top left)
 		}
-		
-		override public function create():void {
-			//set up
-		}
-		
 	}
-
 }

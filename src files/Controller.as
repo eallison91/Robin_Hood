@@ -9,11 +9,11 @@ package
 	 */
 	public class Controller 
 	{
-		public static final var METER_SCALE:Number = 4; // pixels per meter
-		public static final var GRAVITY:Number = 9.8;
-		public static final var FRICTION:Number = 0.05; // coefficient of friction in flight
-		public static final var X_SCALE:uint = 600;
-		public static final var Y_SCALE:uint = 400;
+		public static const METER_SCALE:Number = 4; // pixels per meter
+		public static const GRAVITY:Number = 9.8;
+		public static const FRICTION:Number = 0.05; // coefficient of friction in flight
+		public static const X_SCALE:uint = 600;
+		public static const Y_SCALE:uint = 400;
 	
 		public var projectileTypes:Array;	
 		
@@ -35,11 +35,11 @@ package
 			logger = new Logger("robin_hood", 105, "ff3fe2e3edf7537b45cf898378a17816", 1, 1);
 		}
 
-		public function processCollision(projectile:Projectile, building:Building):void {
+		public function processCollisionBuilding(projectile:Projectile, building:Building):void {
 			//TODO
 		}
 
-		public function processCollision(projectile:Projectile, arrow:Arrow):void {
+		public function processCollisionArrow(projectile:Projectile, arrow:Arrow):void {
 			//TODO
 		}
 	}

@@ -9,16 +9,16 @@ package
 	public class ProjectileController
 	{
 		
-		private Controller controller;
-		private int level;
-		private int frequency;
+		private var controller:Controller;
+		private var level:int;
+		private var frequency:int;
 
-		public function ProjectileController(Controller controller) {
+		public function ProjectileController(controller:Controller) {
 			this.controller = controller;
 			//TODO
 		}
 		
-		public function startRound(int level, int frequency) {
+		public function startRound(level:int, frequency:int) {
 			this.level = level;
 			this.frequency = frequency;
 			//TODO
