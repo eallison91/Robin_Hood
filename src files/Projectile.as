@@ -19,10 +19,12 @@ package
 		protected var vX:Number;
 		protected var vY:Number;
 		
+		protected var colliding:Number;
+		
 		public function Projectile(callback:Function, buildings:Array, x:Number, y:Number) {
 			this.callback = callback;
 			this.buildings = buildings;
-			super(x, y);
+			super(x, y, graphic);
 		}
 		
 		/**
@@ -34,6 +36,9 @@ package
 		public function launch(vX:Number, vY:Number):void {
 			throw new Error("Cannot instantiate Projectile base class.");
 		}
-	}
-	
+		
+		override public function update():void {
+			//TODO if in a collision, render according to stage (update graphic or just lag?)
+			//     and increment variable else just update position.
+	}	
 }

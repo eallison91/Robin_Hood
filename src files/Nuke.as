@@ -9,7 +9,6 @@ package
 	 */
 	public class Nuke extends Projectile 
 	{
-		
 		override public function launch(vX:Number, vY:Number):void {
 			//TODO
 		}
