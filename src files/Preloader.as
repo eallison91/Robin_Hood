@@ -63,8 +63,6 @@ package
 		{
 			var mainClass:Class = getDefinitionByName("Main") as Class;
 			addChild(new mainClass() as DisplayObject);
-		}
-		
-	}
-	
+		}	
+	}	
 }

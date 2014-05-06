@@ -40,5 +40,6 @@ package
 		override public function update():void {
 			//TODO if in a collision, render according to stage (update graphic or just lag?)
 			//     and increment variable else just update position.
+		}
 	}	
 }

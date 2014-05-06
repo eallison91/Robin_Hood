@@ -1,0 +1,10 @@
+TONIGHT (Tuesday):
+Nora:
+- Get to the point where individual arrows (incl graphics) and projectiles can fly through their entire trajectory
+- Implement timer in ProjectileController that launches boulders periodically
+- Put together a simple level 1 stage that can actually run
+
+
+Jake:
+- Create (in an independent project, if necessary, for compilation issues) a bow that can render in 2 positions (stretched and unstretched) in response to clicking and dragging
+- Start designing layout components for "StartMenuState" (name, start button, maybe that's it?)
