@@ -7,10 +7,10 @@ package
 	 * @author Eleanor Allison
 	 * @author Jake Sanders
 	 */
-	public class Missile extends FlxSprite implements Projectile 
+	public class Missile extends FlxSprite extends Projectile 
 	{
 		
-		public function launch(vX:Number, vY:Number):void {
+		override public function launch(vX:Number, vY:Number):void {
 			//TODO
 		}
 	}

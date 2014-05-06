@@ -7,7 +7,7 @@ package
 	 * @author Eleanor Allison
 	 * @author Jake Sanders
 	 */
-	public class Arrow extends FlxSprite implements Projectile 
+	public class Arrow extends FlxSprite  
 	{
 		[Embed(source = 'arrow.png')] private var arrowImg:Class;
 		

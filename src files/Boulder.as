@@ -7,10 +7,9 @@ package
 	 * @author Eleanor Allison
 	 * @author Jake Sanders
 	 */
-	public class Boulder extends FlxSprite implements Projectile 
-	{
-		
-		public function launch(vX:Number, vY:Number):void {
+	public class Boulder extends Projectile 
+	{					
+		override public function launch(vX:Number, vY:Number):void {
 			//TODO
 		}
 	}
