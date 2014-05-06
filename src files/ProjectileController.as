@@ -23,5 +23,8 @@ package
 			this.frequency = frequency;
 			//TODO
 		}
+
+		public function launch(int projectileType) {
+			
 	}
 }

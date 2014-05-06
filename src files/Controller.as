@@ -1,4 +1,4 @@
-package  
+package
 {
 	import flash.errors.StackOverflowError;
 	import Logger;
@@ -18,6 +18,7 @@ package
 		public var projectileTypes:Array;	
 		
 		private var projController:ProjectileController;
+
 		private var score:Score;
 		private var projectiles:Array;
 		private var arrows:Array;

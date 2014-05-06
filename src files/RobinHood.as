@@ -9,7 +9,6 @@ package
 	 */
 	public class RobinHood extends FlxGame 
 	{
-		private var controller:Controller = new Controller();
 		
 		public function RobinHood() 
 		{
