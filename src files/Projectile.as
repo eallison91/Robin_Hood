@@ -5,15 +5,17 @@ package
 	/**
 	 * An "abstract Actionscript class."
 	 * 
-	 * The class itself should not ever be instantiated; however, a runtime 
-	 * error will not occur until a call to launch(), since Constructor 
-	 * functionality is intended to be inherited.
+	 * The class itself should not ever be instantiated directly.
+	 * However, in order to achieve constructor and update base functionality,
+	 * it remains possible. DON'T INSTANTIATE IT.
 	 * 
 	 * @author Eleanor Allison
 	 * @author Jake Sanders
 	 */
 	public class Projectile extends FlxSprite
 	{
+		public static const COLLISION_DURATION:Number = 5;
+		
 		protected var callback:Function;
 		protected var buildings:Array;
 		protected var vX:Number;
@@ -21,20 +23,13 @@ package
 		
 		protected var colliding:Number;
 		
-		public function Projectile(callback:Function, buildings:Array, x:Number, y:Number) {
+		public function Projectile(callback:Function, buildings:Array, x:Number, y:Number, vX:Number, vY:Number) {
 			this.callback = callback;
 			this.buildings = buildings;
-			super(x, y, graphic);
-		}
-		
-		/**
-		 * OVERRIDE THIS.
-		 * 
-		 * @param	vX
-		 * @param	vY
-		 */
-		public function launch(vX:Number, vY:Number):void {
-			throw new Error("Cannot instantiate Projectile base class.");
+			this.vX = vX;
+			this.vY = vY;
+			colliding = 0;
+			super(x, y);
 		}
 		
 		override public function update():void {

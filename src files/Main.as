@@ -20,6 +20,7 @@ package
 
 		private function init(e:Event = null):void 
 		{
+			trace("something?");
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			var game:RobinHood = new RobinHood();
 			addChild(game);

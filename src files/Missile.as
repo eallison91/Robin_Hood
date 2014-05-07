@@ -1,17 +1,24 @@
 package  
 {
-	import org.flixel.FlxSprite;
-	
 	/**
 	 * ...
 	 * @author Eleanor Allison
-	 * @author Jake Sanders
 	 */
-	public class Missile extends FlxSprite extends Projectile 
-	{	
-		override public function launch(vX:Number, vY:Number):void {
-			//TODO
+	public class Missile extends Projectile 
+	{
+		[Embed(source = 'assets/missile.png')] private var missileImg:Class;
+		
+		public function Missile(callback:Function, buildings:Array, x:Number, y:Number, vX:Number, vY:Number) 
+		{
+			super(callback, buildings, x, y, vX, vY);
 		}
+		
+		override public function update():void {
+			x += vX;
+			y += vY;
+			super.update();
+		}
+		
 	}
-	
+
 }

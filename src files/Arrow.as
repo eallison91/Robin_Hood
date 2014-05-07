@@ -9,17 +9,20 @@ package
 	 */
 	public class Arrow extends FlxSprite  
 	{
-		[Embed(source = 'arrow.png')] private var arrowImg:Class;
+		[Embed(source = 'assets/arrow.png')] private var arrowImg:Class;
 		
-		public function Arrow(X:Number=0, Y:Number=0, SimpleGraphic:Class=null) 
+		protected var vX:Number;
+		protected var vY:Number;
+		
+		public function Arrow(x:Number, y:Number) 
 		{
-			super(X, Y, SimpleGraphic);
-			loadGraphic(arrowImg, false, false, 7, 20);
+			super();
+			this.x = x;
+			this.y = y;
+			loadGraphic(arrowImg, false, false, 5, 20, false);
 		}
-		
-		/* INTERFACE Projectile */
-		
-		public function launch(vX:Number, vY:Number):void
+	
+		public function shoot(vX:Number, vY:Number):void
 		{
 			this.vX = vX;
 			this.vY = vY;
@@ -27,10 +30,14 @@ package
 		}
 		
 		override public function update():void {
+			trace("x: ", x);
+			trace("y: ", y);
+			trace("vX: ", vX);
+			trace("vY: ", vY);
 			x += vX;
 			y += vY;
-			vX *= (1 - FRICTION);
-			vY += Controller.GRAVITY * Controller.METER_SCALE * (1 - Controller.FRICTION);
+			vX *= (1 - PlayState.FRICTION);
+			vY += PlayState.GRAVITY * PlayState.METER_SCALE * (1 - PlayState.FRICTION);
 			angle = Math.acos(vX / Math.sqrt(Math.pow(vX, 2) + Math.pow(vY, 2)));
 			super.update();
 		}

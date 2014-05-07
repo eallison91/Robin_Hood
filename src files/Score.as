@@ -13,6 +13,7 @@ package
 		public function Score() 
 		{
 			score = 0;
+			super(300, 200, 50);
 			
 		}
 		

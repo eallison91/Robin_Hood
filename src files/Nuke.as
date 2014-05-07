@@ -1,17 +1,24 @@
-package
+package  
 {
-	import org.flixel.FlxSprite;
-	
 	/**
 	 * ...
 	 * @author Eleanor Allison
-	 * @author Jake Sanders
 	 */
 	public class Nuke extends Projectile 
 	{
-		override public function launch(vX:Number, vY:Number):void {
-			//TODO
+		[Embed(source = 'assets/nuke.png')] private var nukeImg:Class;
+		
+		public function Nuke(callback:Function, buildings:Array, x:Number, y:Number, vX:Number, vY:Number) 
+		{
+			super(callback, buildings, x, y, vX, vY);
 		}
+		
+		override public function update():void {
+			x += vX;
+			y += vY;
+			super.update();
+		}
+		
 	}
-	
+
 }
